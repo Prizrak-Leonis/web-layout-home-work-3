@@ -32,15 +32,14 @@ ul {
 .header-left-wrp {
 	display: flex;
 	gap: 40px;
+	align-items: center;
 }
 
 .header-logo {}
 
-.header-search-bar {
+.header-search-btn {
 	width: 26px;
 	height: 26px;
-	content: "\foc9";
-	border: 5px solid rgb(255, 0, 0);
 }
 
 .header-right-wrp {
@@ -254,7 +253,6 @@ ul {
 
 @media (max-width: 1024px) {
 	.header {
-		height: 75px;
 		padding: 0 36px;
 	}
 
@@ -283,7 +281,6 @@ ul {
 	.banner-txt-highlight {
 		font-size: 24px;
 		line-height: 29px;
-
 	}
 
 	.categories-list {
@@ -302,5 +299,65 @@ ul {
 	.products-list {
 		grid-template-columns: repeat(2, 360px);
 		gap: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.header {
+		padding: 0 16px;
+	}
+
+	.profile-menu {
+		display: none;
+	}
+
+	.basket {
+		display: none;
+	}
+
+
+	.banner-img {
+		display: none;
+	}
+
+	.banner-title {
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	.banner-txt-wrp {
+		max-width: 236px;
+	}
+
+	.banner-subtitle {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.banner-txt-highlight {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.categories-list {
+		gap: 20px;
+		grid-template-columns: 344px;
+	}
+
+	.categories-item {
+		height: 248px;
+	}
+
+	.categories-item:nth-child(4) {
+		height: 111px;
+	}
+
+	.products-title-wrp {
+		margin: 64px auto;
+	}
+
+	.products-list {
+		grid-template-columns: 360px;
 	}
 }
