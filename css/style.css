@@ -71,6 +71,7 @@ ul {
 
 .banner-txt-wrp {
 	width: 764px;
+
 }
 
 .banner-title {
@@ -118,11 +119,11 @@ ul {
 	width: 100%;
 	max-width: 360px;
 	height: 260px;
-	/* background: rgba(33, 22, 22, 0.7); */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	background-size: cover;
 }
 
 .categories-item:nth-child(1) {
@@ -249,4 +250,57 @@ ul {
 	width: 210px;
 	height: 48px;
 	margin: 48px calc(50% - 105px) 60px calc(50% - 105px);
+}
+
+@media (max-width: 1024px) {
+	.header {
+		height: 75px;
+		padding: 0 36px;
+	}
+
+	.banner {
+		height: 368px;
+	}
+
+	.banner-img {
+		height: 368px;
+	}
+
+	.banner-txt-wrp {
+		width: 368px;
+	}
+
+	.banner-title {
+		font-size: 44px;
+		line-height: 53px;
+	}
+
+	.banner-subtitle {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	.banner-txt-highlight {
+		font-size: 24px;
+		line-height: 29px;
+
+	}
+
+	.categories-list {
+		gap: 20px;
+		grid-template-columns: repeat(3, 232px);
+	}
+
+	.categories-item {
+		height: 137px;
+	}
+
+	.categories-item:nth-child(4) {
+		height: 116px;
+	}
+
+	.products-list {
+		grid-template-columns: repeat(2, 360px);
+		gap: 16px;
+	}
 }
