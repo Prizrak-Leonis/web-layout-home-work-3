@@ -153,7 +153,9 @@ ul {
 	background-color: rgba(33, 22, 22, 0.7);
 }
 
-.categories-item-link {}
+.categories-item-link {
+	z-index: 1;
+}
 
 .categories-item-title {
 	font-weight: 400;
