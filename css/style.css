@@ -123,6 +123,7 @@ ul {
 	justify-content: center;
 	text-align: center;
 	background-size: cover;
+	position: relative;
 }
 
 .categories-item:nth-child(1) {
@@ -144,7 +145,11 @@ ul {
 	height: 180px;
 }
 
-.categories-item::before {
+.categories-item::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
 	background-color: rgba(33, 22, 22, 0.7);
 }
 
